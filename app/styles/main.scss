@@ -1,0 +1,109 @@
+// bower:scss
+@import "bower_components/bootstrap-grid-sass/bootstrap-grid-sass.scss";
+
+// modules & sections
+@import "modules/sprite";
+@import "functions";
+@import "reset";
+@import "fonts";
+@import "variables";
+
+@import "sections/header";
+@import "sections/head-section";
+@import "sections/ourstory-section";
+@import "sections/video-section";
+@import "sections/expertize-section";
+@import "sections/video-section";
+@import "sections/team-section";
+@import "sections/work-section";
+@import "sections/slider-section";
+@import "sections/form-section";
+@import "sections/footer-section";
+
+
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+html {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  line-height: 1.2;
+}
+.btn {
+  text-transform: uppercase;
+  font-family: $hammersithoneregular;
+  font-size: 16px;
+  color: $turquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  width: 118px;
+  height: 38px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+h1{
+  font-size: 22px;
+}
+h2 {
+  font-size: 14px;
+}
+p {
+  font-size: 14px;
+  font-family: $robotolight;
+}
+span.under {
+  display: block;
+  font-size: 14px;
+  font-family: $playfairdisplayregular;
+  text-align: center;
+  letter-spacing: 1px;
+  &:after {
+    content: '';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 50px;
+    height: 2px;
+    background-color: #C6C4C9;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 575px) {
+
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  span.under {
+    font-size: 9px;
+    &:after {
+      height: 1px;
+    }
+  }
+}

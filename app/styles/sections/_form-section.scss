@@ -1,0 +1,109 @@
+.form-section .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  .form-section-child {
+    h2 {
+      font-family: $playfairdisplaybold;
+      font-size: 22px;
+      color: $headers;
+    }
+  }
+}
+
+.form-section-form-block {
+  max-width: 460px;
+  min-width: 460px;
+  form {
+    padding-top: 35px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 20px;
+      height: 43px;
+      max-width: none;
+      padding-left: 18px;
+      font-family: $robotolight;
+      font-size: 14px;
+      color: #B0AFB3;
+      border: 1px solid #E5E5E5;
+      &:focus {
+        color: $headers;
+      }
+    }
+    textarea {
+      resize: none;
+      margin-bottom: 35px;
+      height: 198px;
+      max-width: none;
+      border: 1px solid #E5E5E5;
+      color: #B0AFB3;
+      font-family: $robotolight;
+      font-size: 14px;
+      padding-left: 18px;
+      padding-top: 18px;
+      &:focus {
+        color: $headers;
+      }
+    }
+    .btn-submit {
+      @extend .btn;
+      background-color: transparent;
+      margin-left: none;
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+.form-section-clients-block {
+  h2 {
+    padding-bottom: 45px;
+  }
+  .clients-logos {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.client-logo {
+  height: auto;
+  width: 35%;
+  padding-bottom: 45px;
+}
+
+@media (max-width: 768px) {
+  .form-section .container {
+    flex-direction: column;
+    align-items: center;
+    .form-section-child {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  .form-section-form-block {
+    form {
+      margin-right: 0;
+      margin-bottom: 20px;
+      .btn-submit {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .form-section-form-block {
+    min-width: auto;
+  }
+}
+

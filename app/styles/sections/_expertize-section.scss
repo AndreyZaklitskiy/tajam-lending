@@ -1,0 +1,135 @@
+.expertize-section .container {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.expertize-section-header {
+  padding-bottom: 50px;
+  h1 {
+    font-family: $playfairdisplaybold;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $headers;
+    padding-bottom: 15px;
+  }
+  span.under {
+    color: #2f2d35;
+  }
+}
+.expertize-section-links {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 250px;
+  max-width: 318px;
+  padding: 30px 30px 30px;
+  h2 {
+    font-family: $robotoblack;
+    color: #413d4b;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  p {
+    font-family: $robotolight;
+    text-align: center;
+    color: #333333;
+  }
+}
+.link1 {
+  &:before {
+    content: '';
+    display: block;
+    @include sprite($monitor);
+    margin: 30px auto auto;
+  }
+  border-bottom: 1px solid #EBEBEB;
+}
+.link2 {
+  &:before {
+    content: '';
+    display: block;
+    @include sprite($tassel);
+    margin: 30px auto auto;
+  }
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 1px solid #EBEBEB;
+  border-right: 1px solid #EBEBEB;
+}
+.link3 {
+  &:before {
+    content: '';
+    display: block;
+    @include sprite($smartphone);
+    margin: 30px auto auto;
+  }
+  border-bottom: 1px solid #EBEBEB;
+}
+.link4 {
+  &:before {
+    content: '';
+    display: block;
+    @include sprite($pie);
+    margin: 30px auto auto;
+  }
+}
+.link5 {
+  &:before {
+    content: '';
+    display: block;
+    @include sprite($tetris);
+    margin: 30px auto auto;
+  }
+  border-left: 1px solid #EBEBEB;
+  border-right: 1px solid #EBEBEB;
+}
+.link6 {
+  &:before {
+    content: '';
+    display: block;
+    @include sprite($heart);
+    margin: 30px auto auto;
+  }
+}
+@media (max-width: 1200px) {
+  .link2 {
+    border-right: none;
+  }
+  .link4 {
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 1px solid #EBEBEB;
+  }
+  .link5 {
+    border-left: none;
+  }
+}
+@media (max-width: 768px){
+  .link {
+    max-width: 273px;
+  }
+}
+@media (max-width: 575px) {
+  .link {
+    padding: 10px 30px 30px;
+    max-width: 318px;
+  }
+  .link2 {
+    border-left: none;
+  }
+  .link4 {
+    border-left: none;
+  }
+  .link5 {
+    border-right: none;
+    border-bottom: 1px solid #EBEBEB;
+  }
+}

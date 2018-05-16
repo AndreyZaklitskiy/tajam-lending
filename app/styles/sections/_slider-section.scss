@@ -1,0 +1,104 @@
+.slider-section {
+  position: relative;
+  background-image: url(../images/2slider-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    opacity: 0.85;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+.second-slider-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    font-family: $playfairdisplayregular;
+    color: #fff;
+    padding-bottom: 40px;
+  }
+  p {
+    font-family: $playfairdisplayregular;
+    color: #fff;
+    text-align: center;
+    max-width: 775px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    margin: 0 auto 50px;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-family: $robotoblack;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 13px;
+  }
+}
+span.position {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: $robotolight;
+  color: #fff;
+  text-align: center;
+
+}
+.second-slider {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &-slides {
+    width: 45px !important;
+    height: 45px !important;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    background-color: $turquoise;
+    margin: 5px 7px auto;
+    transition: .5s;
+  }
+}
+.slick-slide {
+
+}
+.slick-center {
+  width: 55px !important;
+  height: 55px !important;
+  margin: 0 7px auto;
+}
+@media (max-width: 575px) {
+  .second-slider-content {
+    span {
+      padding-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .second-slider-content {
+    span {
+      padding-bottom: 0;
+    }
+  }
+}
