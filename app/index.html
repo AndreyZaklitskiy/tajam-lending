@@ -10,11 +10,13 @@
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
+  <link type="text/css" rel="stylesheet" href="styles/main.css">
   <!--hamburgers-->
-  <link href="bibles/hamburgers/dist/hamburgers.css" rel="stylesheet">
+  <link type="text/css" href="bibles/hamburgers/dist/hamburgers.css" rel="stylesheet">
   <!--AOS-->
-  <link rel="stylesheet" href="bibles/aos/dist/aos.css">
+  <link type="text/css" rel="stylesheet" href="bibles/aos/dist/aos.css">
+  <!--lightcase-->
+  <link type="text/css" rel="stylesheet" href="bibles/lightcase/src/css/lightcase.css">
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
 </head>
@@ -69,37 +71,37 @@
       </a>
       <ul class="header-menu-list">
         <li>
-          <a href="" class="head">
+          <a href="#" class="head">
             HOME
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#about">
             ABOUT
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#expertise">
             EXPERTISE
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#teams">
             TEAMS
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#works">
             WORKS
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#people-say">
             PEOPLE SAY
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#contact">
             CONTACT
           </a>
         </li>
@@ -161,7 +163,7 @@
     </div>
   </div>
 </header>
-<div class="ourstory-section">
+<div class="ourstory-section" id="about">
   <div class="container">
     <div class="ourstory-section-img" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <img src="images/logo2.png" alt="">
@@ -186,10 +188,10 @@
     </div>
   </div>
 </div>
-<div class="video-section">
+<div class="video-section" >
   <div class="container">
     <div class="video-section-text">
-      <a href="#" class="play-btn" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <a href="video/Fireplace.mp4" data-lc-href="" data-rel="lightcase" class="play-btn" data-rel="lightcase" title="vidosik" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <img src="images/play-btn.png" alt="">
       </a>
       <span  data-aos="fade-up">
@@ -198,7 +200,7 @@
     </div>
   </div>
 </div>
-<div class="expertize-section">
+<div class="expertize-section" id="expertise">
   <div class="container">
     <div class="expertize-section-header">
       <h1  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
@@ -260,7 +262,7 @@
     </div>
   </div>
 </div>
-<div class="team-section">
+<div class="team-section" id="teams">
   <div class="container">
     <div class="team-section-header">
       <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
@@ -334,7 +336,7 @@
     </div>
   </div>
 </div>
-<div class="work-section">
+<div class="work-section" id="works">
   <div class="container">
     <div class="work-section-header">
       <h1 data-aos="fade-down-right" data-aos-anchor-placement="bottom-bottom">
@@ -345,16 +347,8 @@
       </a>
     </div>
     <div class="work-section-body">
-      <div class="pin pin1">
-        <p>
-          ховеры
-        </p>
-      </div>
-      <div class="pin pin2">
-        <p>
-          сделать русский текст от себя
-        </p>
-      </div>
+      <div class="pin pin1"></div>
+      <div class="pin pin2"></div>
       <div class="pin pin3"></div>
       <div class="pin pin4"></div>
       <div class="pin pin5"></div>
@@ -373,9 +367,9 @@
     </div>
   </div>
 </div>
-<div class="slider-section">
+<div class="slider-section" id="people-say">
   <div class="container">
-    <div class="second-slider-table">
+    <div class="second-slider-table"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       <div class="second-slider-content">
         <span>
           “
@@ -462,7 +456,7 @@
         </span>
       </div>
     </div>
-    <div class="second-slider" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <div class="second-slider"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       <div class="second-slider-slides"></div>
       <div class="second-slider-slides"></div>
       <div class="second-slider-slides"></div>
@@ -475,18 +469,18 @@
     </div>
   </div>
 </div>
-<div class="form-section">
+<div class="form-section" id="contact">
   <div class="container">
     <div class="form-section-form-block form-section-child">
       <h2 data-aos="fade-down-right" data-aos-anchor-placement="top-center">
         GIVE US A GOOD NEWS
       </h2>
       <form action="" class="form">
-        <input type="text" placeholder="Name" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <input type="email" placeholder="Email" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
         <input type="text" placeholder="Subject" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <textarea placeholder="Your Massage" name="" id="" cols="30" rows="10" data-aos="fade-up" data-aos-anchor-placement="top-center"></textarea>
-        <button type="submit" class="btn-submit"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <textarea placeholder="Your Massage" name="" cols="30" rows="10"></textarea>
+        <button type="submit" class="btn-submit" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           Submit
         </button>
       </form>
@@ -602,6 +596,13 @@
 <script src="bibles/aos/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<!--lightcase-->
+<script type="text/javascript" src="bibles/lightcase/src/js/lightcase.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $('a[data-rel^=lightcase]').lightcase();
+  });
 </script>
 <!-- slick slider -->
 <script src="slick/slick.min.js"></script>

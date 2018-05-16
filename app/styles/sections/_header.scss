@@ -128,11 +128,11 @@ h1.head-slider {
   }
 }
 .hamburger {
-  z-index: 1001;
+  z-index: 151;
   position: fixed;
-  display: none;
+  display: none !important;
   right: 5%;
-  top: 5%;
+  top: 2%;
   .hamburger-inner {
     background-color: #00e0d0;
     &:before {
@@ -145,7 +145,7 @@ h1.head-slider {
 }
 
 .hamburger-menu {
-  z-index: 1000;
+  z-index: 150;
   opacity: 0;
   transition: 0.5s;
   background-color: $purple;
@@ -190,10 +190,11 @@ h1.head-slider {
   .header-slider {
     margin: 50px auto 70px;
   }
+  .hamburger {
+    display: block !important;
+  }
 }
-.hamburger {
-  display: block;
-}
+
 @media (max-width: 575px) {
   h1.head-slider {
     font-size: 25px;
@@ -204,4 +205,3 @@ h1.head-slider {
     font-size: 18px;
   }
 }
-

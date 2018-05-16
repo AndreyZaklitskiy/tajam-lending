@@ -28,3 +28,11 @@ $(document).ready(function() {
     $('.hamburger-menu').toggleClass('visible');
   });
 });
+//menu
+$('.header-menu-list a').on("click", function (event) {
+  event.preventDefault();
+  let scrollLink  = $(this).attr('href'),
+    offsetTop = $(scrollLink).offset().top,
+    time = 3000;
+  $('body,html').animate({scrollTop: offsetTop}, time);
+});
